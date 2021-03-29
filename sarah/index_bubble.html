@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Top Songs</title>
+        <link rel="stylesheet" type="text/css" href="static/css/style_bubble.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	</head>
+	<body>
+        <div class="container">
+            <!-- NAV BAR HERE -->
+            <div class='row'>
+                <div class='col-md-12'>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Track Components</a>
+                        <!-- collapsable section for when page is small -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- three dropdowns -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto" id='navbar-ul'>
+                            <!-- years -->
+                            <li class="nav-item dropdown" id='year-dropdown'>
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Year
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <!-- sample one -->
+                                <!-- <a class="dropdown-item" href="#">Action</a> -->
+                                <!-- will be filled in by JS -->
+                              </div>
+                            </li>
+                            <!-- x axis -->
+                            <li class="nav-item dropdown" id='x-axis-dropdown'>
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  X Axis
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <!-- filled by JS -->
+                                </div>
+                              </li>
+                            <!-- y axis -->
+                            <li class="nav-item dropdown" id="y-axis-dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Y Axis
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <!-- filled by JS -->
+                                </div>
+                          </ul> 
+                        
+                        <button class="btn btn-outline-success my-2 my-sm-0" id="trigger-chart" type="submit">Make Chart</button>
+                        </div>
+                    </nav> 
+                </div>
+            </div>
+            <!-- Alert that becomes visible upon user choice -->
+            <div class="alert alert-light" role="alert" id='choice-alert'>
+                <div class="mx-auto" style="width: 600px;">
+                    <div id="selection-choices">
+                        <ul>
+                          <li><strong>Current Changes to Apply:</strong></li>
+                          <li id='year-display'></li>
+                          <li id='x-display'></li>
+                          <li id='y-display'></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            <!-- ROW 1 -->
+            <!-- <div class="row">
+                <div class="col-md-6">
+                    <div id='pie'></div>
+                </div>
+                <div class="col-md-6">
+                    <div id='heatmap-corr'></div>
+                </div>
+            </div> -->
+
+            <!-- ROW 2 -->
+            <div class="row bubble-container">
+                <div class="col-md-12">
+                    <div id="bubble"></div>
+                </div>
+            </div>
+
+            <!-- ROW 3 -->
+            <!-- <div class="row">
+                <div class="col-md-12">
+                    MAY NOT NEED COL/ MAYBE DO OTHER THING BC ITS A MAP
+                </div>
+            </div> -->
+        </div>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>      
+		    <script type="text/javascript" src="static/js/bubble.js"></script>
+  </body>
+</html>

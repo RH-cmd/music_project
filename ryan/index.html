@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Top Songs</title>
+        <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	</head>
+	<body>
+        <div class="container">
+            <!-- NAV BAR HERE -->
+            
+            <h1>
+                milk
+            </h1>
+            <!-- ROW 1 -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div id='pie'></div>
+                </div>
+                <div class="col-md-7">
+                    <div id='heatmap-corr'></div>
+                </div>
+                <div class="'col-md-2'">
+                    <div id='heatmap-corr-legend'></div>
+                </div>
+            </div>
+
+            <!-- ROW 2 -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="bubble"></div>
+                </div>
+            </div>
+
+            <!-- ROW 3 -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- MAY NOT NEED COL/ MAYBE DO OTHER THING BC ITS A MAP -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- <script src="https://d3js.org/d3-color.v2.min.js"></script>
+        <script src="https://d3js.org/d3-interpolate.v2.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/underscore@1.12.1/underscore-min.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>   
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>  
+        <script type="text/csv" src='../data/data_cleaned.csv'></script> 
+		<script type="text/javascript" src="static/js/corr-heatmap.js"></script>
+  </body>
+</html>
